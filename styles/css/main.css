@@ -1,0 +1,38 @@
+body {
+  background: #090225;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff; }
+
+#app {
+  padding: 2rem 0; }
+  #app .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #app .btn span {
+      padding-left: 0.5rem; }
+
+.video {
+  padding: 2rem; }
+
+.app-header {
+  text-align: center; }
+
+#canvas {
+  display: none; }
+
+#photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem; }
+  #photos img {
+    width: 100%;
+    border: 2px #fff; }
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem; }
+  .buttons button {
+    margin-right: 1rem; }

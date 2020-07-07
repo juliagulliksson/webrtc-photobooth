@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles/css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebRTC Photobooth</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="app-header">
+        <h1>WebRTC Photobooth</h1>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-6 video">
+            <video id="video">Stream not available</video>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-4"></div>
+          <div class="col col-4">
+            <div class="form-group">
+              <label for="filters">Select filter:</label>
+
+              <select id="filters" class="form-control">
+                <option value="none">Normal</option>
+                <option value="grayscale(100%)">Grayscale</option>
+                <option value="sepia(100%)">Sepia</option>
+                <option value="invert(100%)">Invert</option>
+                <option value="hue-rotate(90deg)">Hue</option>
+                <option value="blur(10px)">Blur</option>
+                <option value="contrast(200%)">Contrast</option>
+              </select>
+            </div>
+            <div class="buttons">
+              <button id="photoButton" class="btn btn-light">
+                <img src="images/camera.svg" />
+                <span>Take photo</span>
+              </button>
+              <button id="clear" class="btn btn-light">
+                <img src="images/trash.svg" />
+                <span>Clear</span>
+              </button>
+            </div>
+            <div class="col col-4"></div>
+          </div>
+          <div class="row">
+            <div class="col col-4">
+              <canvas id="canvas"> </canvas>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div id="photos"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

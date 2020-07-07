@@ -1,0 +1,48 @@
+body {
+  background: rgb(9, 2, 37);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+#app {
+  padding: 2rem 0;
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      padding-left: 0.5rem;
+    }
+  }
+}
+
+.video {
+  padding: 2rem;
+}
+
+.app-header {
+  text-align: center;
+}
+
+#canvas {
+  display: none;
+}
+
+#photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  img {
+    width: 100%;
+    border: 2px #fff;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+  button {
+    margin-right: 1rem;
+  }
+}
